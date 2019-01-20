@@ -1,0 +1,16 @@
+1.
+select * 
+from sfo_listings
+order by price desc
+limit 1;
+
+2. 
+select neighbourhood, count(neighbourhood)
+from sfo_listings
+group by neighbourhood
+order by count desc;
+
+3. select last_review, min(price)
+from sfo_listings
+group by last_review
+order by min asc;
